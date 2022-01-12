@@ -1,0 +1,74 @@
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+
+#map {
+    height: 900px;
+    width: 100%;
+}
+
+
+/* Optional: Makes the page fill the window. */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Button */
+
+#btn-display {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    z-index: 1000;
+    border-radius: 0;
+    padding: 12px 20px;
+    background: none padding-box rgb(255, 255, 255);
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+    font-weight: 500;
+}
+
+#btn-display:hover {
+    color: #fff;
+    background: #0a81ab;
+    transition: 0.2s ease-in-out;
+}
+
+#btn-display-node-passed {
+    position: absolute;
+    top: 20px;
+    left: 180px;
+    z-index: 1000;
+    border-radius: 0;
+    padding: 12px 20px;
+    background: none padding-box rgb(255, 255, 255);
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+    font-weight: 500;
+}
+
+#btn-display-node-passed:hover {
+    color: white;
+    background-color: red;
+    transition: 0.2s ease-in-out;
+}
