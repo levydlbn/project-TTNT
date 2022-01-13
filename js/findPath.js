@@ -23,8 +23,9 @@ function findPath(start, end) {
         distance(fromNode, toNode) {
             let dx = fromNode.data.x - toNode.data.x;
             let dy = fromNode.data.y - toNode.data.y;
-
+            console.log(Math.sqrt(dx * dx + dy * dy))
             return Math.sqrt(dx * dx + dy * dy);
+
         },
     });
 
@@ -34,7 +35,9 @@ function findPath(start, end) {
     });
     resultPath.push(end);
     resultPath.unshift(start);
+
     return resultPath;
+
     // return optimizeResult(resultPath);
 }
 
@@ -55,7 +58,6 @@ function findNearestNode(nodeFind) {
         }
     });
 
-    console.log(foundNode)
     return foundNode;
 
 }
